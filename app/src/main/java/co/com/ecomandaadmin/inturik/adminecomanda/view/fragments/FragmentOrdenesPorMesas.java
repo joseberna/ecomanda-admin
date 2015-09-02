@@ -62,8 +62,6 @@ public class FragmentOrdenesPorMesas extends Fragment implements SwipeRefreshLay
                 buscarOrdenesPorMesa();
             }
         });
-
-
         return screen;
 
     }
