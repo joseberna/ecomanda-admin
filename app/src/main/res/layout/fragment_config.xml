@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP Servidor:" />
+
+        <EditText
+            android:id="@+id/id_ip_server"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puerto Servidor:" />
+
+        <EditText
+            android:id="@+id/id_port_server"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:text="80" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_guardar_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="guardar"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_msj_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error al asignar valores"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_msj_succes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valores asignados correctamente..."
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
